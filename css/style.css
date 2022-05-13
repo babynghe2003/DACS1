@@ -401,41 +401,30 @@ section{
 .order form .box-container .box{
    flex:1 1 41rem;
 }
+.order form .box-container .box .ls:hover{
+   background-color: rgb(219, 219, 219);
+}
+.order form .box-container .box .ls{
+   display: flex;
+   justify-content: start;
+   padding:10px;
+}
+.order form .box-container .box .img{
+   width: 20%;
+   margin-right: 30px;
+}
 
-.order form .box-container .box .inputBox input,
-.order form .box-container .box .inputBox textarea{
-   width: 100%;
-   margin:1rem 0;
-   padding:1.2rem 1.4rem;
-   font-size: 1.7rem;
+.order form .box-container .box .ls .des{
+   padding:20px;
+}
+.order form .box-container .box .ls .des p{
+   font-size: 1.6rem;
    color:var(--light-black);
-   border:var(--border);
-   text-transform: none;
-}
-
-.order form .box-container .box .inputBox input::placeholder,
-.order form .box-container .box .inputBox textarea::placeholder{
-   text-transform: capitalize;
-}
-
-.order form .box-container .box .inputBox input:focus,
-.order form .box-container .box .inputBox textarea:focus{
-   background: var(--black);
-   color:var(--white);
-}
-
-.order form .box-container .box .inputBox input:focus::placeholder,
-.order form .box-container .box .inputBox textarea:focus::placeholder{
-   color:var(--light-white);
-}
-
-.order form .box-container .box .inputBox textarea{
-   height: 20rem;
-   resize: none;
+   margin-top: 10px;
 }
 
 .order form .box-container .box .inputBox .map{
-   height: 20rem;
+   height: 50rem;
    width: 100%;
    margin:1rem 0;
 }
