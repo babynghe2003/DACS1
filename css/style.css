@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap');
 
 :root{
-   --peru:#e87232;
+   --peru:#ee7925;
    --black:#222;
    --white:#fff;
    --light-black:#666;
@@ -85,8 +85,8 @@ section{
 }
 
 .header{
-   padding-top: 2rem;
-   padding-bottom: 2rem;
+   padding-top: 1rem;
+   padding-bottom: 1rem;
    display: flex;
    align-items: center;
    justify-content: space-between;
@@ -98,6 +98,7 @@ section{
 }
 
 .header .logo{
+   display: flex;
    font-size: 2.5rem;
    font-weight: bolder;
    color:var(--black);
@@ -227,11 +228,11 @@ section{
 
 
 
-.food{
+.art{
    background: var(--light-bg);
 }
 
-.food .slide{
+.art .slide{
    text-align: center;
    padding:4rem 2rem;
    border-radius: .5rem;
@@ -249,7 +250,7 @@ section{
    bottom:0;
 }
 
-.food .swiper-slide-active{
+.art .swiper-slide-active{
    transform: scale(1);
    opacity: 1;
    background: var(--white);
@@ -257,23 +258,23 @@ section{
    border:var(--border);
 }
 
-.food .slide img{
+.art .slide img{
    height: 25rem;
    margin-bottom: 1rem;
 }
 
-.food .slide h3{
+.art .slide h3{
    font-size: 2.5rem;
    padding:1rem 0;
    color:var(--black);
 }
 
-.food .slide .price{
+.art .slide .price{
    font-size: 2.5rem;
    color:var(--peru);
 }
 
-.food-preview-container{
+.art-preview-container{
    background: var(--dark-bg);
    position: fixed;
    top:0; left:0;
@@ -285,7 +286,7 @@ section{
    justify-content: center;
 }
 
-.food-preview-container .food-preview{
+.art-preview-container .art-preview{
    text-align: center;
    background: var(--white);
    padding:3rem 2rem;
@@ -294,27 +295,27 @@ section{
    width: 60rem;
 }
 
-.food-preview-container .food-preview.active{
+.art-preview-container .art-preview.active{
    display: inline-block;
    animation:fadeIn 0.4s cubic-bezier(.54,1.3,.63,1.34) backwards;
 }
 
-.food-preview-container .food-preview img{
+.art-preview-container .art-preview img{
    height: 25rem;
    margin-bottom: 1rem;
 }
 
-.food-preview-container .food-preview h3{
+.art-preview-container .art-preview h3{
    padding:1rem 0;
    font-size: 3rem;
    color:var(--black);
    z-index: 1;
 }
-.food-preview-container .food-preview span{
+.art-preview-container .art-preview span{
    font-size: 2rem;
 }
 
-.food-preview-container .food-preview p{
+.art-preview-container .art-preview p{
    font-size: 1.6rem;
    color:var(--light-black);
    padding:1rem 0;
