@@ -25,13 +25,8 @@
    
 }
 
-* > img{
-   user-select: none;
-   pointer-events: none;
-}
-
 html{
-   font-size: 62.5%;
+   font-size: 0.62rem;
    overflow-x: hidden;
    scroll-behavior: smooth;
    scroll-padding-top: 6rem;
