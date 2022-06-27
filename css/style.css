@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&display=swap');
 
 :root{
-   --peru:#ee7925;
+   --peru:#EE4540;
    --black:#222;
    --white:#fff;
    --light-black:#666;
@@ -13,13 +14,15 @@
 }
 
 *{
-   font-family: 'Dosis', sans-serif;
+   font-family: 'Barlow Condensed', sans-serif;
    margin:0; padding:0;
    box-sizing: border-box;
    outline: none; border:none;
    text-decoration: none;
    transition: all 0.4s cubic-bezier(.43,1.1,.62,1.08);
    text-transform: capitalize;
+   border-radius: 5px;
+   
 }
 
 * > img{
@@ -48,7 +51,7 @@ html{
  ::-webkit-scrollbar-thumb {
    border: #2f2f2f;
    border-radius: 4px;
-   background: linear-gradient(#fed524, #f95a57);
+   background: linear-gradient(#2D132C, #801336,#C72C41,#EE4540);
  }
 
 section{
@@ -95,6 +98,7 @@ section{
    top:0; left:0; right: 0;
    background: var(--white);
    z-index: 1000;
+   border-radius: 0;
 }
 
 .header .logo{
@@ -113,6 +117,7 @@ section{
    font-size: 2rem;
    margin-left: 2rem;
    color:var(--light-black);
+   text-transform: uppercase;
 }
 
 .header .navbar a:hover{
@@ -136,6 +141,7 @@ section{
 .home{
    padding:0;
    background: var(--black);
+   border-radius: 0;
 }
 
 .home .slide{
@@ -376,8 +382,16 @@ section{
 
 .order1{
    background: var(--light-black);
+   margin-left: -30px;
+   margin-right: 30px;
+   margin-top: 20px;
+   border-radius: 30px;
+   transition: 2s;
+   transform: translateX(-100vw);
 }
-
+.order1-active{
+   transform: translateX(0);
+}
 .order1 .heading span{
    color:var(--white);
 }
@@ -447,9 +461,17 @@ section{
 
 
 .order{
-   background: var(--peru);
+   background: linear-gradient(135deg,#2D132C, #801336,#C72C41,#EE4540);
+   margin-left: 100px;
+   margin-right: -30px;
+   margin-bottom: 30px;
+   border-radius: 30px;
+   transform: translateX(100vw);
+   transition: 2s;
 }
-
+.order-active {
+   transform: translateX(0);
+}
 .order .heading span{
    color:var(--white);
 }
@@ -508,6 +530,7 @@ section{
 
 .blogs{
    background: var(--light-bg);
+
 }
 
 .blogs .slide .image{
