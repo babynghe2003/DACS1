@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600&display=swap');
 
 :root{
-   --peru:#ee7925;
+   --peru:#EE4540;
    --black:#222;
    --white:#fff;
    --light-black:#666;
@@ -48,7 +48,7 @@ html{
  ::-webkit-scrollbar-thumb {
    border: #2f2f2f;
    border-radius: 4px;
-   background: linear-gradient(#fed524, #f95a57);
+   background: linear-gradient(#2D132C, #801336,#C72C41,#EE4540);
  }
 
 section{

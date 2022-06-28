@@ -111,13 +111,15 @@ window.onscroll = function(e){
    let wY = window.scrollY;
    let Y1 = document.getElementById('order').getBoundingClientRect().top
    let Y2 = document.getElementById('order1').getBoundingClientRect().top
-   if (wY > Y1+500){
+   console.log(Y1+" "+Y2+" "+wY   );
+
+   if (Y1<screen.height/2){
       document.getElementById('order').classList.add('order-active')
    }else{
       document.getElementById('order').classList.remove('order-active')
    }
 
-   if (wY > Y2+300){
+   if (Y2<screen.height/2){
       document.getElementById('order1').classList.add('order1-active')
    }else{
       document.getElementById('order1').classList.remove('order1-active')
